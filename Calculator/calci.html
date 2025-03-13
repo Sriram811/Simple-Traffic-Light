@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>   
+        <link rel="stylesheet" href="calci.css">
+    </head>
+    <body>
+        <button value="1" id="onee" class="onee" onclick="resultfunctiononee()" >1</button>
+        <button value="2" id="twoo" class="twoo" onclick="resultfunctiontwoo()">2</button>
+        <button value="3" id="three" class="three" onclick="resultfunctionthree()">3</button>
+        <button value="4" id="four" class="four" onclick="resultfunctionfour()">4</button>
+        <button value="5"id="five" class="five" onclick="resultfunctionfive()">5</button>
+        <button value="6"id="six" class="six" onclick="resultfunctionsix()">6</button>
+        <button value="7"id="seven" class="seven" onclick="resultfunctionseven()">7</button>
+        <button value="8"id="eight" class="eight" onclick="resultfunctioneight()">8</button>
+        <button value="9"id="nine" class="nine" onclick="resultfunctionnine()">9</button>
+        <button value="0"id="zero" class="zero" onclick="resultfunctionzero()">0</button>
+
+        <h1 class="header">Calculator...</h1>
+    
+        <input onclick="resultfunctionnum1()"checked=true  value="" class="one" id="num1" placeholder="Enter the First Number">
+        <input onclick="resultfunctionnum2()"checked=false value="" class="two" id="num2" placeholder="Enter the Second Number">
+        <button onclick="resultfunctionadd()" class="add">+</button>
+        <button onclick="resultfunctionsub()" class="sub">-</button>
+        <button onclick="resultfunctionmulti()" class="multi">*</button>
+        <button onclick="resultfunctiondiv()" class="div">/</button>
+       
+        <button class="resultin" id="result">Result</button>
+    </body>
+</html>
+<script>
+    var box1= document.getElementById("num1")
+    var box2= document.getElementById("num2")
+    var result= document.getElementById("result")
+
+    var onevalue = document.getElementById("onee")
+    var twovalue = document.getElementById("twoo")
+    var threevalue = document.getElementById("three")
+    var fourvalue = document.getElementById("four")
+    var fivevalue = document.getElementById("five")
+    var sixvalue = document.getElementById("six")
+    var sevenvalue = document.getElementById("seven")
+    var eightvalue = document.getElementById("eight")
+    var ninevalue = document.getElementById("nine")
+    var zerovalue = document.getElementById("zero")
+    
+    var number1result;
+
+function resultfunctionnum1(){
+    if(box1.checked !== true){
+        box1.checked = true
+        box2.checked = false
+
+    }
+
+    if (box1.checked === true) {
+        number1result = box1
+    } 
+}
+function resultfunctionnum2() {
+        if (box2.checked !== true) {
+        box1.checked = false
+        box2.checked = true
+
+    }
+
+    if (box2.checked === true) {
+        number1result = box2
+    } 
+    }
+function resultfunctionadd()
+    {
+     var box1value= Number(box1.value)
+     var box2value= Number(box2.value)
+     var total = box1value+box2value
+     result.textContent=total
+    }
+    function resultfunctionsub()
+    {
+     var box1value= Number(box1.value)
+     var box2value= Number(box2.value)
+     var total = box1value-box2value
+     result.textContent=total
+    }
+
+    function resultfunctionmulti()
+    {
+     var box1value= Number(box1.value)
+     var box2value= Number(box2.value)
+     var total = box1value*box2value
+     result.textContent=total
+    }
+    function resultfunctiondiv()
+    {
+     var box1value= Number(box1.value)
+     var box2value= Number(box2.value)
+     var total = box1value/box2value
+     result.textContent=total
+    }
+    function resultfunctiononee()
+    {
+        var box11value = number1result.value 
+        number1result.value = box11value +'1'
+    }
+    function resultfunctiontwoo()
+    {
+        var box11value= number1result.value
+        number1result.value=box11value +'2'
+    }
+    function resultfunctionthree() {
+            var box11value = number1result.value
+            number1result.value = box11value + '3'
+        }
+    function resultfunctionfour() {
+            var box11value = number1result.value
+            number1result.value = box11value + '4'
+    }
+    function resultfunctionfive() {
+            var box11value = number1result.value
+            number1result.value = box11value + '5'
+        }
+    function resultfunctionsix() {
+            var box11value = number1result.value
+            number1result.value = box11value + '6'
+        }
+    function resultfunctionseven() {
+            var box11value = number1result.value
+            number1result.value = box11value + '7'
+        }
+    function resultfunctioneight() {
+            var box11value = number1result.value
+            number1result.value = box11value + '8'
+        }
+    function resultfunctionnine() {
+            var box11value = number1result.value
+            number1result.value = box11value + '9'
+        }
+    function resultfunctionzero() {
+            var box11value = number1result.value
+            number1result.value = box11value + '0'
+        }
+           
+</script>
+
+

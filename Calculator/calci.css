@@ -1,0 +1,287 @@
+*{
+    padding:0%;
+    margin: 0%;
+    background-color: black;
+}
+/*body{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}*/
+/*.equal{
+<button class="equal" id="equal">=</button>
+    font-style: italic;
+    font-family: cursive;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color:red;
+    border: none;
+    border-radius: 75px;
+    transition: box-shadow 0.5s ease;
+}
+.equal:hover {
+    background-color: black;
+    cursor:grabbing;
+    caret-color: red;
+    box-shadow: 0 0 55px rgb(127, 255, 195), 0 0 50px rgb(255, 47, 193), 0 0 5px rgb(196, 254, 255);
+}*/
+.header{
+    font-family: cursive;
+    color:cyan;
+    font-size: 50px;
+    margin-left: 43%;
+    max-width: max-content;
+    border-radius: 18px;
+    letter-spacing: 6px;
+    margin-top: 20px;
+}
+.resultin{
+    height: 50px;
+    margin-left: 48%;
+    margin-top: 5%;
+    font-style: italic;
+    font-family: cursive;
+    width: 150px;
+    height: 55px;
+    font-size: 28px;
+    color: aquamarine;
+    border:5px solid black ;
+    border-radius: 55px;
+    transition: box-shadow 0.5s ease;
+    animation-name: calci;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 55px rgb(182, 127, 255), 0 0 50px rgb(57, 255, 47), 0 0 5px rgb(255, 235, 196);
+}
+@keyframes calci {
+    0% {
+        border-color: rgb(179, 255, 0);
+        box-shadow: 0 0 55px aquamarine, 0 0 50px rgb(47, 255, 196), 0 0 45px rgb(196, 255, 225);
+    }
+
+    35% {
+        border-color: rgb(0, 128, 73);
+        box-shadow: 0 0 55px rgb(154, 222, 135), 0 0 50px rgb(255, 47, 227), 0 0 45px rgb(242, 196, 255);
+
+    }
+
+    65% {
+        border-color: rgb(0, 128, 126);
+        box-shadow: 0 0 55px rgb(135, 222, 167), 0 0 50px rgb(193, 47, 255), 0 0 45px rgb(196, 255, 253);
+
+    }
+
+    100% {
+        border-color:rgb(0, 139, 123);
+        box-shadow: 0 0 55px rgb(150, 222, 135), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+    }
+}
+/*.resultin:hover{
+    background-color: black;
+    cursor:pointer;
+    caret-color: red;
+    box-shadow: 0 0 55px rgb(172, 255, 127), 0 0 50px rgb(57, 255, 47), 0 0 5px rgb(255, 235, 196);
+}*/
+.one,.two{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    margin-left: 15%;
+    font-style: italic;
+    font-family: cursive;
+    width: 280px;
+    height: 60px;
+    padding-left: 58px;
+    font-size: 18px;
+    color:aquamarine;
+    border: none;
+    border-radius: 15px;
+    transition: box-shadow 0.5s ease;
+}
+.one:hover:focus{
+    border: 5px solid rgb(0, 255, 119);
+    cursor: progress;
+    caret-color: red;
+    box-shadow: 0 0 55px aquamarine, 0 0 50px rgb(47, 255, 196), 0 0 5px rgb(196, 255, 225);
+}
+.two:hover:focus {
+    border: 5px solid rgb(0, 255, 191);
+    cursor: progress;
+    caret-color:red;
+    box-shadow: 0 0 55px rgb(135, 222, 186), 0 0 50px rgb(255, 47, 217), 0 0 5px rgb(196, 255, 210);
+}
+.one:focus-visible:hover{
+    background-color:black;
+}
+.two:focus-visible:hover {
+    background-color:black;
+}
+.add,.sub,.multi,.div
+{
+    /*display: flex;
+flex-direction: row;
+flex-flow: row;
+justify-content: center;
+align-items: center;*/
+border: 5px solid rgb(136, 255, 0) ;
+height: 50px;
+background-color: black;
+margin-left: 15%;
+font-style: italic;
+color: red;
+width: 100px;
+height: 55px;
+font-size: 35px;
+background-color:aqua;
+border-radius: 25px;
+transition: box-shadow 0.5s ease;
+transition:ease-in 1s;
+}
+.add{
+    cursor:cell;
+}
+.sub {
+    font-size: 40px;
+    cursor:progress;
+}
+.multi {
+    padding-top: 13px;
+    cursor:pointer;
+}
+.div {
+    cursor:copy;
+}
+.add:hover{
+    background-color: black;
+    box-shadow: 0 0 55px aquamarine, 0 0 50px rgb(47, 255, 196), 0 0 45px rgb(196, 255, 225);
+}
+.sub:hover {
+    background-color:black;
+    box-shadow: 0 0 55px rgb(154, 222, 135), 0 0 50px rgb(255, 47, 227), 0 0 45px rgb(242, 196, 255);
+}
+.multi:hover {
+    background-color: black;
+    box-shadow: 0 0 55px rgb(135, 222, 167), 0 0 50px rgb(193, 47, 255), 0 0 45px rgb(196, 255, 253);
+}
+.div:hover {
+    background-color: black;
+    box-shadow: 0 0 55px rgb(150, 222, 135), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+}
+.add:active {
+    transform: scale(2.5);
+}
+.sub:active {
+    transform: scale(2.5);
+}
+.multi:active{
+    transform: scale(2.5);
+}
+.div:active {
+    transform: scale(2.5);
+}
+.onee,.twoo,.three,.four,.five,.six,.seven,.eight,.nine,.zero{
+    /*display: inline-block;
+    flex-direction:column;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;*/
+    height: 40px;
+    width: 5%;
+    margin:20px;
+    margin-top: 2%;
+    color: bisque;
+    background-color:darkgray;
+    font-size: 30px;
+    border: 3px solid aquamarine;
+    border-radius: 15px;
+    border-radius: 25px;
+   /* transition: box-shadow s ease;*/
+    transition: 1s ease;
+}
+.onee{
+    margin-left: 15%;
+}
+.four{
+    display: inline-block;
+}
+.onee:hover
+{
+    background-color: black;
+    box-shadow: 0 0 55px rgb(150, 222, 135), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+}
+.twoo:hover {
+    background-color: black;
+    box-shadow: 0 0 55px rgb(222, 180, 135), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+}
+.three:hover {
+    background-color: black;
+    box-shadow: 0 0 55px rgb(222, 135, 135), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+}
+.four:hover {
+    background-color: black;
+    box-shadow: 0 0 55px rgb(212, 222, 135), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+}
+.five:hover {
+    background-color: black;
+    box-shadow: 0 0 55px rgb(135, 222, 219), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+}
+.six:hover {
+    background-color: black;
+    box-shadow: 0 0 55px rgb(222, 216, 135), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+}
+.seven:hover {
+    background-color: black;
+    box-shadow: 0 0 55px rgb(212, 135, 222), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+}
+.eight:hover {
+    background-color: black;
+    box-shadow: 0 0 55px rgb(135, 186, 222), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+}
+.nine:hover {
+    background-color: black;
+    box-shadow: 0 0 55px rgb(150, 222, 135), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+}
+.zero:hover {
+    background-color: black;
+    box-shadow: 0 0 55px rgb(222, 215, 135), 0 0 50px rgb(47, 255, 82), 0 0 45px rgb(210, 196, 255);
+}
+.onee:active{
+    transform: scale(2.5);
+}
+.twoo:active {
+    transform: scale(2.5);
+}
+.three:active {
+    transform: scale(2.5);
+}
+.four:active {
+    transform: scale(2.5);
+}
+.five:active {
+    transform: scale(2.5);
+}
+.six:active {
+    transform: scale(2.5);
+}
+.seven:active {
+    transform: scale(2.5);
+}
+.eight:active {
+    transform: scale(2.5);
+}
+.nine:active {
+    transform: scale(2.5);
+}
+.zero:active {
+    transform: scale(2.5);
+}
