@@ -1,1 +1,1 @@
-# Simple-Traffic-Light
+simple traffic light only using html and css
